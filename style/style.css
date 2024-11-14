@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: light-dark( #000000,yellow);
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+/*/Modal/*/
+/* Overlay */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurece el fondo */
+    z-index: 1;
+}
+
+/* Modal */
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 40vw;
+    max-height: 80vh; /* Limita la altura del modal */
+    overflow-y: auto; /* Permite el scroll dentro del modal */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+/* Modal content */
+#modal-content {
+    position: relative;
+}
+
+/* Close button */
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.fix{
+    scale: 1.2;
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Italiana';
+}
+
+p{
+    font-family: 'Inter';
+}
+
+#albums-content {
+    display: flex; /* Utiliza Flexbox */
+    justify-content: space-between; /* Espaciado entre las secciones */
+    align-items: flex-start; /* Alineación al inicio de la sección */
+}
+
+#contentContainer {
+    width: 50%; /* Ajusta el ancho según sea necesario */
+    margin-left: 20px; /* Espacio entre albums y contenido */
+    margin-bottom: 20vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between; /* Separa el h1 a la izquierda y el ul al centro/derecha */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 20px; /* Ajuste de espacio a los lados */
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav h1 {
+    margin: 0; /* Eliminar márgenes */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ececec;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+}
+
+#hero{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ),
+    url(../assets/Donald-Glover/hero.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-container a:visited{
+    color: light-dark( #cacaca,rgb(175, 175, 7));
+}
+
+
+.hero-container button{
+    margin-top: 20px;
+    font-size: 13pt;
+    padding: 16px 20px;
+    border-radius: 5%;
+    background: transparent;
+    color: light-dark( #ffffff,yellow);
+    border: 2.2px solid light-dark( #ffffff,yellow);
+    cursor: pointer;
+}
+
+.hero-container ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.hero-container li{
+    padding: 8px;
+}
+
+.plataform img{
+    width: 60px;
+}
+
+.plataform-container{
+    margin-top: 20px;
+}
+
+.section-black{
+    position: relative;
+    top: -15vh;
+    overflow: hidden;
+}
+.section-container {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.gallery h2{
+    color: light-dark( #ffffff,yellow);
+}
+
+.container-fluid{
+    width: 70%;
+}
+
+.bloque{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque img{
+    max-width: 400px;
+}
+
+#info h2, #info p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    color: light-dark( #ffffff,yellow);
+}
+
+#albums{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: -80px;
+    width: 45%; 
+}
+.carousel{
+    height: 600px; 
+    perspective: 250px;
+    
+}
+
+.carousel .carousel-item {
+	width: 450px;
+	padding: 50px;
+	height: auto;
+	text-align: center;
+    border-radius: 15px;
+}
+
+.img-area {
+	width: 390px;
+	height: 390px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 5%;
+}
+
+.img-area img{
+    width: 100%;
+}
+
+.testi p {
+    color: light-dark( #262626,yellow);
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+.testi h4 {
+	font-size: 20px;
+	margin: 0;
+    color: light-dark( #262626,yellow);
+}
+
+.testi h5 {
+	font-size: 14px;
+	letter-spacing: 5px;
+	margin: 7px 0;
+}
+
+.gallery{
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s linear;
+}
+
+.column img:hover {
+    filter: brightness(0.5);
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+#blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact{
+    height: 80vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input{
+        width: 610px;
+        border: 1px solid;
+        fill: light-dark( #262626,yellow);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer{
+    height: 30vh;
+    background-color: #141414;
+    display: flex;
+}
+
+footer p{
+    color: light-dark( #c3c3c3,yellow);
+}
+
+footer .container{
+    justify-content: space-around;
+    flex-direction: row;
+    color: light-dark( #c3c3c3,yellow);
+}
+
+:root {
+    color-scheme: light dark;
+    background-color:light-dark(#ececec,#222222);
+    }
+
+.card{
+    background-color:light-dark(#ececec,#222222);
+}
