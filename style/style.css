@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    color: light-dark( #000000,yellow);
 }
 
 span:hover{
@@ -357,13 +356,4 @@ footer .container{
     justify-content: space-around;
     flex-direction: row;
     color: light-dark( #c3c3c3,yellow);
-}
-
-:root {
-    color-scheme: light dark;
-    background-color:light-dark(#ececec,#222222);
-    }
-
-.card{
-    background-color:light-dark(#ececec,#222222);
 }
